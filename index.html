@@ -24,13 +24,8 @@
 <body id="home">
 
 <div class="headerWrap">
-    <div class="header" role="banner">
-        <div class="logo">
-            <a href="#">
-                <img src="images/vrga_go.svg" title="Return Home" alt="Logo"/>
-            </a>
-        </div>
-        <div class="search_wrap">
+    <div class="search_wrap">
+        <div class="inner">
             <form autocomplete="off" action="search-results" method="get" class="search">
                 <label class="search_label" for="search">Search</label>
                 <input type="text" id="search" aria-label="Search" name="search" placeholder="Search..." value="" />
@@ -38,153 +33,162 @@
                 <button type="submit" aria-label="Submit"><i class="fal fa-search" aria-hidden="true"></i></button>
             </form>
         </div>
+    </div>
+    <div class="header" role="banner">
+        <div class="logo">
+            <a href="#">
+                <!--img src="images/vrga_logo.svg" title="Return Home" alt="Logo"/-->
+                <img src="images/vrga_logo_white.svg" title="Return Home" alt="Logo" />
+            </a>
+        </div>
         <nav class="nav" aria-label="Site Menu">
-            <div class="item"><a href="#">Link</a></div>
-            <div class="item"><a href="#">Link</a></div>
-            <div class="item"><a href="#">Link</a></div>
-            <div class="item"><a href="#">Link</a></div>
-            <div class="item drop_trigger"><a href="#">Dropdown <i class="fal fa-caret-down" aria-hidden="true"></i></a>
+            <div class="item drop_trigger"><a href="#">About <i class="fal fa-caret-down" aria-hidden="true"></i></a>
                 <div class="drop_menu">
-                    <div class="item"><a href="#">Link</a></div>
-                    <div class="item"><a href="#">Link</a></div>
-                    <div class="item"><a href="#">Link</a></div>
+                    <div class="item"><a href="#">About Us</a></div>
+                    <div class="item"><a href="#">Our Staff</a></div>
+                    <div class="item"><a href="#">Board of Directors</a></div>
+                    <div class="item"><a href="#">Contact</a></div>
                 </div>
             </div>
+            <div class="item"><a href="#">Members</a></div>
+            <div class="item drop_trigger"><a href="#">Resources <i class="fal fa-caret-down" aria-hidden="true"></i></a>
+                <div class="drop_menu">
+                    <div class="item"><a href="#">Education</a></div>
+                    <div class="item"><a href="#">Employment Posters</a></div>
+                    <div class="item"><a href="#">Regulatory</a></div>
+                    <div class="item"><a href="#">Newsletter</a></div>
+                    <div class="item"><a href="#">Trade Partners</a></div>
+                    <div class="item"><a href="#">Retail Facts</a></div>
+                </div>
+            </div>
+            <div class="item"><a href="#">Legislation</a></div>
+            <div class="item drop_trigger"><a href="#">Membership <i class="fal fa-caret-down" aria-hidden="true"></i></a>
+                <div class="drop_menu">
+                    <div class="item"><a href="#">Services</a></div>
+                    <div class="item"><a href="#">Benefits</a></div>
+                    <div class="item"><a href="#">Join</a></div>
+                </div>
+            </div>
+            <div class="item"><a href="#" id="searcher"><i class="far fa-search"></i></a></div>
         </nav>
     </div>
 </div>
 
-<div class="content">
+<div class="slideshow">
 
-    <div class="slideshow">
-
-        <div class="slide">
-            <a href="#">
-                <img src="https://via.placeholder.com/1200x400/4e4e4e/FFFFFF/?text=1" alt="">
-                <div class="info">
-                    <div class="title">Clouds</div>
-                    <div class="subtext">Subtext</div>
-                    <div class="button">Button</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="slide">
-            <a href="#">
-                <img src="https://via.placeholder.com/1200x400/4e4e4e/FFFFFF/?text=2" alt="">
-                <div class="info">
-                    <div class="title">Clouds</div>
-                    <div class="subtext">Subtext</div>
-                    <div class="button">Button</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="slide">
-            <a href="#">
-                <img src="https://via.placeholder.com/1200x400/4e4e4e/FFFFFF/?text=3" alt="">
-                <div class="info">
-                    <div class="title">Clouds</div>
-                    <div class="subtext">Subtext</div>
-                    <div class="button">Button</div>
-                </div>
-            </a>
-        </div>
-
+    <div class="slide">
+        <a href="#">
+            <img src="https://source.unsplash.com/random/1920x600?nature,water" alt="">
+            <div class="info">
+                <div class="title">Clouds</div>
+                <div class="subtext">Subtext</div>
+                <div class="button">Button</div>
+            </div>
+        </a>
     </div>
 
-    <div class="features">
+</div>
 
-        <div class="item">
-            <a href="#">
-                <div class="image">
-                    <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=1" alt="">
-                </div>
-                <div class="bar">
-                    <div class="title">Feature #1</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque!</div>
-                </div>
-            </a>
+
+<div class="content">
+
+    <div class="updates">
+        <div class="group">
+
+            <div class="item" data-type="Event">
+                <a href="#">
+                    <div class="label">
+                        <div class="tag">Event</div>
+                    </div>
+                    <div class="details">
+                        <div class="date"><i class="far fa-calendar"></i> Feb 27</div>
+                        <h3 class="title">2019 Legislative Day & Luncheon</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio culpa libero consectetur necessitatibus adipisci voluptas, vitae possimus, in placeat ullam.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item" data-type="News">
+                <a href="#">
+                    <div class="label">
+                        <div class="tag">News</div>
+                    </div>
+                    <div class="details">
+                        <div class="date"><i class="far fa-calendar"></i> Nov 23</div>
+                        <h3 class="title">Fistfights and Long Lines on Black Friday? Not as much anymore.</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio culpa libero consectetur necessitatibus adipisci voluptas, vitae possimus, in placeat ullam.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item" data-type="Legislation">
+                <a href="#">
+                    <div class="label">
+                        <div class="tag">Legislation</div>
+                    </div>
+                    <div class="details">
+                        <div class="date"><i class="far fa-calendar"></i> May 14</div>
+                        <h3 class="title">2018 Legislative Session</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio culpa libero consectetur necessitatibus adipisci voluptas, vitae possimus, in placeat ullam.</p>
+                    </div>
+                </a>
+            </div>
+
         </div>
 
-        <div class="item">
-            <a href="#">
-                <div class="image">
-                    <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=2" alt="">
-                </div>
-                <div class="bar">
-                    <div class="title">Feature #2</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque!</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="item">
-            <a href="#">
-                <div class="image">
-                    <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=3" alt="">
-                </div>
-                <div class="bar">
-                    <div class="title">Feature #3</div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque!</div>
-                </div>
-            </a>
-        </div>
-
+        <div class="buttons center"><a href="#" class="button">More News & Events</a></div>
     </div>
 
     <div class="intro_text">
-        <h1>DESIGN</h1>
+        <h1>Vermont Retail & Grocers Association</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloremque beatae, fugiat, fuga possimus velit et dolorem. Esse reiciendis dolor corrupti. Optio non neque quas dolorum velit, sit vero esse ratione voluptate dignissimos eos nisi cumque cum hic ipsam consectetur eveniet reprehenderit. Enim perspiciatis, quasi ratione iste! Rerum, molestiae unde.</p>
     </div>
 
-    <div class="post_list_widget">
-
-        <div class="item">
-            <div class="cover">
-                <a href="#">
-                    <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=1" alt="">
+    <div class="featured-members">
+        <div class="group">
+            <h2>Featured Member</h2>
+            <div class="item">
+                <a href="">
+                    <div class="logo"><img src="https://via.placeholder.com/450x450/4e4e4e/FFFFFF/?text=Logo" /></div>
+                    <div class="info">
+                        <h3 class="title">Stowe Mercantile</h3>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fuga voluptas ipsam nulla deserunt, nisi praesentium dolor dignissimos provident maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, consectetur.</div>
+                    </div>
                 </a>
             </div>
-            <div class="info">
-                <div class="title"><a href="#">Blog Post #1</a></div>
-                <div class="post_meta">
-                    <div class="date"><i class="fal fa-calendar-alt" aria-hidden="true"></i>Jan 6, 2019</div>
-                </div>
-                <div class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quod cumque, placeat asperiores quasi? Esse, ipsam, atque? Sit, itaque, animi.</div>
-            </div>
-        </div>
 
-        <div class="item">
-            <div class="cover">
-                <a href="#">
-                    <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=2" alt="">
+        </div>
+        <div class="group secondary">
+            <h2>Other Members</h2>
+            <div class="item">
+                <a href="">
+                    <div class="logo"><img src="https://via.placeholder.com/200x200/4e4e4e/FFFFFF/?text=Logo" /></div>
+                    <h3 class="title">Vermont Lazerwash</h3>
                 </a>
             </div>
-            <div class="info">
-                <div class="title"><a href="#">Blog Post #2</a></div>
-                <div class="post_meta">
-                    <div class="date"><i class="fal fa-calendar-alt" aria-hidden="true"></i>Jan 3, 2019</div>
-                </div>
-                <div class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quod cumque, placeat asperiores quasi? Esse, ipsam, atque? Sit, itaque, animi.</div>
-            </div>
-        </div>
 
-        <div class="item">
-            <div class="cover">
-                <a href="#">
-                    <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=3" alt="">
+            <div class="item">
+                <a href="">
+                    <div class="logo"><img src="https://via.placeholder.com/200x200/4e4e4e/FFFFFF/?text=Logo" /></div>
+                    <h3 class="title">Green Mountain Diapers</h3>
                 </a>
             </div>
-            <div class="info">
-                <div class="title"><a href="#">Blog Post #3</a></div>
-                <div class="post_meta">
-                    <div class="date"><i class="fal fa-calendar-alt" aria-hidden="true"></i>Jan 1, 2019</div>
-                </div>
-                <div class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quod cumque, placeat asperiores quasi? Esse, ipsam, atque? Sit, itaque, animi.</div>
-            </div>
-        </div>
 
+            <div class="item">
+                <a href="">
+                    <div class="logo"><img src="https://via.placeholder.com/200x200/4e4e4e/FFFFFF/?text=Logo" /></div>
+                    <h3 class="title">The Knitting Studio</h3>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="">
+                    <div class="logo"><img src="https://via.placeholder.com/200x200/4e4e4e/FFFFFF/?text=Logo" /></div>
+                    <h3 class="title">Adam's Quick Stop</h3>
+                </a>
+            </div>
+
+        </div>
     </div>
 
     <div class="instagram_widget">

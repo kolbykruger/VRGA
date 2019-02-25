@@ -1,6 +1,38 @@
+//Fixed Header
+const nav = document.querySelector('.headerWrap');
+const navOffset = nav.offsetTop;
+
+function fixedNav () {
+    if (window.scrollY >= navOffset) {
+        document.body.style.paddingTop = nav.offsetHeight+'px';
+        document.body.classList.add('fixed-nav');
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-nav');
+    }
+}
+
+window.addEventListener('scroll', fixedNav);
+
 // Links return false
 $('a:not(.force), button:not(.force), input[type="submit"]:not(.force)').click(function() {
     return false
+})
+
+//Search
+const searcher = document.getElementById('searcher');
+const search = document.getElementById('search');
+const searchContainer = document.querySelector('.search_wrap');
+
+searcher.addEventListener('click', function() {
+    if (searcher.classList.contains('active')) {
+        searcher.classList.remove('active');
+        searchContainer.classList.remove('active');
+    } else {
+        searcher.classList.add('active');
+        searchContainer.classList.add('active');
+        search.focus();
+    }
 })
 
 //Scroll to Top
