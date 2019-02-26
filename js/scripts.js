@@ -1,13 +1,42 @@
+//Statistics
+// let statistics = document.querySelectorAll('.statistics .value > span');
+// document.addEventListener('DOMContentLoaded', function() {
+//     statistics.forEach(function(element) {
+//         let start = +(element.dataset.start);
+//         console.log(start)
+//         let end = +(element.dataset.end);
+//         console.log(end)
+//         counter(element, start, end);
+//     })
+// })
+//
+// function counter(element, start, end) {
+//     let current = start;
+//     let range = end - start;
+//     let increment = end > start ? 1 : -1;
+//     let stepTime = Math.abs(Math.floor(2000 / range));
+//     let timer = setInterval(function() {
+//         current += increment;
+//         element.innerHTML = current;
+//         if (current == end) {
+//             clearInterval(timer);
+//         }
+//     }, stepTime)
+// }
+
 //Fixed Header
 const nav = document.querySelector('.headerWrap');
 const navOffset = nav.offsetTop;
+const navHeight = nav.clientHeight;
+console.log(navOffset)
+console.log(navHeight)
 
 function fixedNav () {
-    if (window.scrollY >= navOffset) {
-        document.body.style.paddingTop = nav.offsetHeight+'px';
+    if (window.scrollY >= navOffset + navHeight / 2) {
+        //document.body.style.paddingTop = nav.offsetHeight+'px';
         document.body.classList.add('fixed-nav');
     } else {
-        document.body.style.paddingTop = 0;
+        //document.body.style.paddingTop = 0;
         document.body.classList.remove('fixed-nav');
     }
 }
@@ -147,7 +176,7 @@ $('.slideshow').slick({
   autoplaySpeed: 5000,
   dots: true,
   infinite: true,
-  fade: false,
+  fade: true,
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
