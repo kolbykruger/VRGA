@@ -24,6 +24,37 @@
 //     }, stepTime)
 // }
 
+//Search Filter
+$(document).ready(function(){
+
+    //Update Total
+    var total = $('div').find('[data-search]').children('.item').length;
+    $('.count span').text(total);
+
+    //Update on Keypress
+    $('#search-filter').keyup(function(){
+        var filter = $(this).val(), count = 0;
+        var content = $('[data-search]').children('.item');
+        $(content).each(function(){
+            var searchable = $(this).find('.name').text();
+            if (searchable.search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+
+            } else {
+                $(this).fadeIn();
+                count++;
+            }
+        });
+
+        //Update Count
+        $('.count span').text(count);
+
+        //No Results
+        if (count <= 0) {$('.noresults').fadeIn();}
+        else{$('.noresults').fadeOut();}
+    });
+});
+
 //Fixed Header
 const nav = document.querySelector('.headerWrap');
 const navOffset = nav.offsetTop;
